@@ -28,4 +28,5 @@ public class mainCam : MonoBehaviour
         mainCamera.SetActive(false);
         moveCamera.SetActive(true);
     }
+    
 }
