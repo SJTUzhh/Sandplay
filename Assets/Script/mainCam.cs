@@ -6,6 +6,8 @@ public class mainCam : MonoBehaviour
 {
     public GameObject mainCamera;
     public GameObject moveCamera;
+    public GameObject playCamera;
+
     public PlayableDirector playableDirector;
     public PlayableDirector back_playableDirector;
 // Start is called before the first frame update
@@ -13,6 +15,8 @@ public class mainCam : MonoBehaviour
     {
         mainCamera.SetActive(true);
         moveCamera.SetActive(false);
+        playCamera.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -20,7 +24,12 @@ public class mainCam : MonoBehaviour
     {
         
     }
-
+    void beforeplay()
+    {
+        mainCamera.SetActive(false);
+        moveCamera.SetActive(false);
+        playCamera.SetActive(true);
+    }
     void play()
     {
         playableDirector.Play();
@@ -33,18 +42,29 @@ public class mainCam : MonoBehaviour
     {
         mainCamera.SetActive(true);
         moveCamera.SetActive(false);
+        playCamera.SetActive(false);
     }
+    void change1()
+    {
+        mainCamera.SetActive(false);
+        moveCamera.SetActive(true);
+        playCamera.SetActive(false);
+
+    }
+    
     public void onClick_main()
     {
+        beforeplay();
         backplay();       
         Invoke("change",2f);
     }
     public void onClick_move()
     {
-        mainCamera.SetActive(false);
-        moveCamera.SetActive(true);
-        // animation.Play();
+        beforeplay();
+
         play();
+        Invoke("change1",2f);
+
     }
 
     
