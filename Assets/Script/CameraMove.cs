@@ -27,30 +27,13 @@ public class CameraMove : MonoBehaviour
             transform.Rotate(-Input.GetAxis("Mouse Y") * sensitivityMouse, Input.GetAxis("Mouse X") * sensitivityMouse, 0);
         }
  
-        //键盘按钮←/a和→/d实现视角水平移动，键盘按钮↑/w和↓/s实现视角水平旋转
-        if(Input.GetKey(KeyCode.A))
+        if (Input.GetMouseButton(2))
         {
-            transform.Translate(-1 * sensitivetyKeyBoard, 0, 0);
+            float sensitivityAmt=2.0f;
+            Vector3 p0 = transform.position;
+            Vector3 p01 = p0 - transform.right * Input.GetAxisRaw("Mouse X") * sensitivityAmt * Time.timeScale;
+            Vector3 p03 = p01 - transform.up * Input.GetAxisRaw("Mouse Y") * sensitivityAmt * Time.timeScale;
+            transform.position = p03;
         }
-        if(Input.GetKey(KeyCode.D))
-        {
-            transform.Translate(1 * sensitivetyKeyBoard, 0, 0);
-        }
-        if(Input.GetKey(KeyCode.W))
-        {
-            transform.Translate(0,1 * sensitivetyKeyBoard, 0);
-        }
-        if(Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(0,-1 * sensitivetyKeyBoard, 0);
-        }
-        // if (Input.GetAxis("Horizontal") != 0)
-        // {
-        //     transform.Translate(Input.GetAxis("Horizontal") * sensitivetyKeyBoard, 0, 0);
-        // }
-        // if (Input.GetAxis("Vertical") != 0)
-        // {
-        //     transform.Translate(0, Input.GetAxis("Vertical") * sensitivetyKeyBoard, 0);
-        // }
     }
 }
