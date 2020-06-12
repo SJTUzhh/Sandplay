@@ -19,20 +19,14 @@ public class DragSpawn : MonoBehaviour, IPointerDownHandler
             //刷新位置
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             _objDragSpawning.transform.position = ray.GetPoint(10);
- 
             //结束拖拽
             if (Input.GetMouseButtonUp(0))
             {
-                Debug.Log("end");
-
                 _isDragSpawning = false;
                 _objDragSpawning = null;
             }
         }
     }
-
-
-
 
     //按下鼠标时开始生成实体
     public void OnPointerDown(PointerEventData eventData)

@@ -14,6 +14,7 @@ public class SelectObjManager : MonoBehaviour {
 	public float _scaleFactor=1.2f;
 	//地面层级
 	public LayerMask _groundLayerMask;
+	public LayerMask _dragLayerMask;
 	int touchID;
 	bool isDragging = false;
 	bool isTouchInput = false;
@@ -77,7 +78,11 @@ public class SelectObjManager : MonoBehaviour {
 		#endif
 		Ray ray = Camera.main.ScreenPointToRay (screenPosition);
 		RaycastHit hitInfo;
-		if (Physics.Raycast (ray, out hitInfo, 1000, _groundLayerMask)) {
+		if (Physics.Raycast (ray, out hitInfo, 1000, _dragLayerMask)) {
+			point = hitInfo.point;
+			isPlaceSuccess = true;
+		} 
+		else if (Physics.Raycast (ray, out hitInfo, 1000, _groundLayerMask)) {
 			point = hitInfo.point;
 			isPlaceSuccess = true;
 		} else {

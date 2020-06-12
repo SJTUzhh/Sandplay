@@ -1,10 +1,8 @@
 using System;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
-
-#pragma warning disable 618
+using UnityEngine.UI;
 [RequireComponent(typeof (Image))]
 public class ForcedReset : MonoBehaviour
 {
