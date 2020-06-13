@@ -31,15 +31,6 @@ public class CameraMove : MonoBehaviour
             transform.Rotate( -Input.GetAxis("Mouse Y")* sensitivityMouse,0,0);
         }
 
-
-        // if (Input.GetMouseButton(0))
-        // {
-        //     Vector3 p0 = transform.position;
-        //     Vector3 p01 = p0 - transform.right * Input.GetAxisRaw("Mouse X") * sensitivityAmt * Time.timeScale;
-        //     Vector3 p03 = p01 - transform.up * Input.GetAxisRaw("Mouse Y") * sensitivityAmt * Time.timeScale;
-        //     Camera.main.transform.position = p03;
-        // }
-
         if (Input.GetMouseButton(2))
         {
             float sensitivityAmt=2.0f;

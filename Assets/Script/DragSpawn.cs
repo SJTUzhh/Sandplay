@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
- 
+//not use
 public class DragSpawn : MonoBehaviour, IPointerDownHandler
 {
     public GameObject prefab;
