@@ -15,6 +15,6 @@ public class changeScene : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
-            SceneManager.LoadScene("Show");
+            SceneManager.LoadScene("Show");//show改成场景2的名字，注意，不是你build时保存的名字，是asset里面Scene的名字
     }
 }
