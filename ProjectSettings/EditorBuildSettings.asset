@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Tank - Mark V drivable/Show.unity
+  - enabled: 0
+    path: Assets/Object/Tank - Mark V drivable/Show.unity
     guid: 3aa6a0bfb7bfbf54ba6126cc70ed1d0c
+  - enabled: 0
+    path: Assets/Scenes/testScene.unity
+    guid: 34770b52abaa06f42ad1aeb4a3027ccf
+  - enabled: 1
+    path: Assets/Scenes/GaiaScene.unity
+    guid: 14e9e97f11d2dba4ab5aefdc98bfdefb
   m_configObjects: {}

@@ -1,0 +1,2 @@
+com.unity.postprocessing@2.1.7
+com.unity.render-pipelines.high-definition@5.7.2-preview

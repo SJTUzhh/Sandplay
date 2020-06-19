@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 425c33cf356b6ed49aff36246c922951
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_timeOfDayProfile: {fileID: 11400000, guid: f5a6a0d6349b57f46b49d223e95e0338,
+      type: 2}
+  - m_ambientSkiesProfileVol1: {fileID: 11400000, guid: 27a0f5f29868ebf4e816eb534b395f71,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

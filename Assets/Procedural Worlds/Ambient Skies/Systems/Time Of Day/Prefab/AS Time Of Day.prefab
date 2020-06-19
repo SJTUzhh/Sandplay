@@ -1,0 +1,336 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1956081478984634}
+  m_IsPrefabParent: 1
+--- !u!1 &1193898898765598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4983738299443768}
+  m_Layer: 0
+  m_Name: TOD Light Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1447670889109286
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4781191962924982}
+  - component: {fileID: 108651266446698478}
+  m_Layer: 0
+  m_Name: Directional Light Sun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1833380584649922
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4180374178043962}
+  - component: {fileID: 108721590870891328}
+  m_Layer: 0
+  m_Name: Directional Light Moon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1956081478984634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4722416416723360}
+  - component: {fileID: 114728204594238598}
+  m_Layer: 0
+  m_Name: AS Time Of Day
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4180374178043962
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833380584649922}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4983738299443768}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!4 &4722416416723360
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956081478984634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4983738299443768}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4781191962924982
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1447670889109286}
+  m_LocalRotation: {x: 0.0000015199182, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4983738299443768}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
+--- !u!4 &4983738299443768
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1193898898765598}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4781191962924982}
+  - {fileID: 4180374178043962}
+  m_Father: {fileID: 4722416416723360}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!108 &108651266446698478
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1447670889109286}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 0.9094789, b: 0.8537736, a: 1}
+  m_Intensity: 0.7514989
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 2.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!108 &108721590870891328
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833380584649922}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 0.44419718, g: 0.5196993, b: 0.5849056, a: 1}
+  m_Intensity: 0
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 4
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!114 &114728204594238598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956081478984634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425c33cf356b6ed49aff36246c922951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_timeOfDayProfile: {fileID: 11400000, guid: f5a6a0d6349b57f46b49d223e95e0338, type: 2}
+  m_ambientSkiesProfileVol1: {fileID: 11400000, guid: 27a0f5f29868ebf4e816eb534b395f71,
+    type: 2}
+  m_ambientProceduralSkybox:
+    name: 
+    assetName: 
+    profileIndex: 0
+    lightRotation: 0
+    isPWProfile: 0
+    defaultUseSkies: 1
+    defaultAmbientMode: 2
+    defaultFogType: 4
+    defaultSkyboxRotation: 0
+    defaultSkyboxPitch: 0
+    defaultProceduralSunSize: 0.04
+    defaultProceduralSunSizeConvergence: 10
+    defaultProceduralAtmosphereThickness: 0.85
+    defaultProceduralGroundColor:
+      serializedVersion: 2
+      rgba: 4293247657
+    defaultProceduralSkyTint:
+      serializedVersion: 2
+      rgba: 4286611584
+    defaultProceduralSkyExposure: 1.3
+    defaultProceduralSkyboxRotation: 0
+    defaultProceduralSkyboxPitch: 100
+    defaultIncludeSunInBaking: 1
+    defaultProceduralSkyMultiplier: 1
+    defaultShadowStrength: 1
+    defaultIndirectLightMultiplier: 1
+    defaultProceduralSunColor: {r: 1, g: 1, b: 1, a: 1}
+    defaultProceduralSunIntensity: 1
+    defaultProceduralFogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    defaultProceduralFogDistance: 2048
+    defaultProceduralFogDensity: 0.01
+    defaultProceduralNearFogDistance: 10
+    defaultScaleHorizonObjectWithFog: 1
+    defaultHorizonSkyEnabled: 1
+    defaultHorizonScattering: 1
+    defaultHorizonFogDensity: 1
+    defaultHorizonFalloff: 0.5
+    defaultHorizonBlend: 1
+    defaultHorizonSize: {x: 2048, y: 2500, z: 2048}
+    defaultFollowPlayer: 1
+    defaultHorizonPosition: {x: 0, y: 0, z: 0}
+    defaultHorizonUpdateTime: 10
+    defaultShadowDistance: 150
+    defaultShadowQuality: 5
+    defaultCascadeCount: 3
+    defaultShadowmaskMode: 1
+    defaultShadowType: 2
+    defaultShadowResolution: 2
+    defaultShadowProjection: 0
+    defaultSkyboxGroundIntensity: 1
+    defaultSkyColor:
+      serializedVersion: 2
+      rgba: 4292524988
+    defaultEquatorColor:
+      serializedVersion: 2
+      rgba: 4287918956
+    defaultGroundColor:
+      serializedVersion: 2
+      rgba: 4284646023
+    defaultEnableSunDisk: 1
+    showSettings: 0
+    useSkies: 1
+    skyboxGroundIntensity: 1
+    skyboxRotation: 0
+    skyboxPitch: 0
+    shadowStrength: 1
+    indirectLightMultiplier: 1
+    shadowDistance: 150
+    proceduralSunSize: 0.04
+    proceduralSunSizeConvergence: 10
+    proceduralAtmosphereThickness: 0.85
+    proceduralGroundColor:
+      serializedVersion: 2
+      rgba: 4293247657
+    proceduralSkyTint:
+      serializedVersion: 2
+      rgba: 4286611584
+    proceduralSkyExposure: 1.3
+    proceduralSkyboxRotation: 0
+    proceduralSkyboxPitch: 100
+    proceduralSunColor: {r: 1, g: 1, b: 1, a: 1}
+    proceduralSunIntensity: 1
+    proceduralFogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    proceduralFogDistance: 2048
+    proceduralFogDensity: 0.01
+    proceduralNearFogDistance: 10
+    includeSunInBaking: 1
+    proceduralSkyMultiplier: 1
+    horizonSkyEnabled: 1
+    scaleHorizonObjectWithFog: 1
+    horizonScattering: 1
+    horizonFogDensity: 1
+    horizonFalloff: 0.5
+    horizonBlend: 1
+    horizonSize: {x: 2048, y: 2500, z: 2048}
+    followPlayer: 1
+    horizonPosition: {x: 0, y: 0, z: 0}
+    horizonUpdateTime: 10
+    shadowmaskMode: 1
+    shadowType: 2
+    shadowResolution: 2
+    shadowProjection: 0
+    ambientMode: 2
+    skyColor:
+      serializedVersion: 2
+      rgba: 4292524988
+    equatorColor:
+      serializedVersion: 2
+      rgba: 4287918956
+    groundColor:
+      serializedVersion: 2
+      rgba: 4284646023
+    shadowQuality: 5
+    fogType: 4
+    cascadeCount: 3
+    enableSunDisk: 1
+  lightRotationDot: 1
+  m_sunActive: 1
