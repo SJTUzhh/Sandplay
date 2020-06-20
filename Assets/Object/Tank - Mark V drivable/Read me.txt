@@ -1,0 +1,43 @@
+
+Package contain drivable Tank Mark V (World War 1).
+
+Movement is based on physic. Scripts are works only for this model (included in package).
+Tank abilities :
+- movement (tank, camera, cannon)
+- shooting
+Everything, what you can see in demo and video is included in package.
+
+*************************************************************************
+
+Technical information :
+• PBR materials
+• Triangles count: 2500
+• Main textures resolution : 4096 x 4096
+• 1 Model
+• 1 Prefrab
+• 4 Materials
+• 2 Physics materials
+• 11 Textures
+• 4 Scripts
+• 2 Sounds
+
+Don't forget to leave a review
+
+*************************************************************************
+
+This package include Standart Assets for explosion. You can delete this folder and use your own explosion.
+Just drag your explosion prefab to RayCastShoot (Script) to variable "Explosion".
+
+!!! Don't forget use Terrain physics material for your terrain. !!!
+
+PlayerController (Script) :
+Every variable is set as should be. 
+But if you want, you can change maximal speed(Variable "Max Speed") or power of engine(Variable "Speed Power").
+
+- Use W, A, S, D or Arrows to move your vehicle
+- Left-click to fire  
+- Mouse for camera rotation 
+
+*************************************************************************
+
+If you have question you can contact me on : boborlukas@gmail.com

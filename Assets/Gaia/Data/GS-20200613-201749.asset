@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e251860fcd970734c9f14ebd98a146c3, type: 3}
+  m_Name: GS-20200613-201749
+  m_EditorClassIdentifier: 
+  m_name: Session 20200613-201749
+  m_description: Rocking out at Creativity Central! If you like Gaia please consider
+    rating it :)
+  m_previewImage: {fileID: 0}
+  m_dateCreated: 2020/6/13 20:17:49
+  m_terrainWidth: 300
+  m_terrainDepth: 300
+  m_terrainHeight: 600
+  m_seaLevel: 14.6484375
+  m_isLocked: 0
+  m_defaults:
+    m_name: 
+    m_fileName: 
+    m_content: 
+  m_resourcesKeys: []
+  m_resourcesValues: []
+  m_previewImageBytes: 
+  m_previewImageWidth: 0
+  m_previewImageHeight: 0
+  m_operations: []

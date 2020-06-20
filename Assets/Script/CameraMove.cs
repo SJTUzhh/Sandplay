@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    public float sensitivityMouse = 2f;
+    public float sensitivityMouse = 5f;
     public float sensitivetyKeyBoard = 0.1f;
-    public float sensitivetyMouseWheel = 10f;    
-    public float sensitivityAmt=2.0f;
+    public float sensitivetyMouseWheel = 20f;    
+    public float sensitivityAmt=5.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +27,7 @@ public class CameraMove : MonoBehaviour
         fwd.Normalize();
         if (Input.GetMouseButton(1))
         {
-            transform.Rotate(0, -Input.GetAxis("Mouse X")* sensitivityMouse, 0, Space.World);
+            transform.Rotate(0, Input.GetAxis("Mouse X")* sensitivityMouse, 0, Space.World);
             transform.Rotate( -Input.GetAxis("Mouse Y")* sensitivityMouse,0,0);
         }
 
