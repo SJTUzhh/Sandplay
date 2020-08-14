@@ -14,7 +14,7 @@
 
 ### **运行Game**
 
-本项目已经生成了可在win10系统上双击运行的exe文件： `Build/SandPlay.exe` ，默认分辨率为1440x960。
+本项目已经生成了可在win10系统上双击运行的exe文件： `Build_files/SandPlay.exe` ，默认分辨率为1440x960。
 
 以下将以Unity3D工程的视角对游戏玩法进行说明。若直接运行 `SandPlay.exe` 文件，相关的玩法操作与下述相同。
 
